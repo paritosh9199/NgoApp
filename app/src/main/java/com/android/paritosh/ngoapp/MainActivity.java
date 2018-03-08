@@ -11,3 +11,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+
+
+// todo 1 create a login screen
+// todo 2 create a registration screen
+// todo 3 --fill in todo--

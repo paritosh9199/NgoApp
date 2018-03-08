@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "904619570845",
+    "firebase_url": "https://ngoapp-cac63.firebaseio.com",
+    "project_id": "ngoapp-cac63",
+    "storage_bucket": "ngoapp-cac63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904619570845:android:27a3792c62ca9602",
+        "android_client_info": {
+          "package_name": "com.android.paritosh.ngoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904619570845-q9utu981hj5h1br06dh4hhl39k3qrpjb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.paritosh.ngoapp",
+            "certificate_hash": "772113f3c55d90dabe624a7c917e08fb88de38cb"
+          }
+        },
+        {
+          "client_id": "904619570845-sdn1qqsdqco1ml56lg94h7t31407el41.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaZ7edtLNUTyYa4tUsVy-z3-wi-909aCo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904619570845-sdn1qqsdqco1ml56lg94h7t31407el41.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
