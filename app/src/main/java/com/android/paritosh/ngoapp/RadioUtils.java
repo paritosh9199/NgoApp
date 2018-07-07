@@ -1,8 +1,11 @@
 package com.android.paritosh.ngoapp;
 import android.content.DialogInterface;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,26 +14,38 @@ import java.util.List;
  * Created by Paritosh on 6/3/2018.
  */
 
-public class RadioUtils {
+public class RadioUtils  {
+    public RadioButton radioButton;
+    public String answer;
+    public ViewGroup vg;
+    int position;
+    private SurveyActivity sa;
 
-    public static void setRadioExclusiveClick(ViewGroup parent) {
+    private RadioGroup lastCheckedRadioGroup = null;
+
+    public void setRadioExclusiveClick(ViewGroup parent, final int position) {
+        this.position = position;
         final List<RadioButton> radios = getRadioButtons(parent);
+        try {
+            for (RadioButton radio : radios) {
 
-        for (RadioButton radio: radios) {
-            radio.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    RadioButton r = (RadioButton) v;
-                    r.setChecked(true);
-                    for (RadioButton r2:radios) {
-                        if (r2.getId() != r.getId()) {
-                            r2.setChecked(false);
+                radio.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        RadioButton r = (RadioButton) v;
+                        r.setChecked(true);
+                        for (RadioButton r2 : radios) {
+                            if (r2.getId() != r.getId()) {
+                                r2.setChecked(false);
+                            }
                         }
-                    }
 
-                }
-            });
+                    }
+                });
+
+            }
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
 
