@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Ngo App</string>
+
+    <string name="gender_prompt">Gender</string>
+
+    <string-array name="select_gender"/>
+    <item name="Male"></item>
+    <item name="Female"></item>
 </resources>
